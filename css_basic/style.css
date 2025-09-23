@@ -1,0 +1,70 @@
+body, main {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+    background-color: #ccc;
+}
+
+main {
+    flex-direction: row;
+    flex: auto;
+    
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    background-color: aqua;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+
+article h1, article h2, article h3 {
+  margin-top: 1rem;
+  color: #2c3e50;
+}
+
+article p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+article ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+article th, article td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+article th {
+  background-color: #f0f0f0;
+}
+
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  header ul {
+    flex-direction: column;
+  }
+}
