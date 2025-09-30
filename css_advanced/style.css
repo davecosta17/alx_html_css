@@ -1,4 +1,4 @@
-/* === Global Styles === */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +32,7 @@ a.cta:hover {
     background: #a655d1;
 }
 
-/* === Header / Navbar === */
+
 header {
     position: absolute;
     top: 0;
@@ -68,7 +68,7 @@ header nav ul li a:hover {
     color: #C271FF;
 }
 
-/* === Banner / Hero Section === */
+/* Banner */
 /* .banner {
     background: url("./images/Object.png") no-repeat center/cover;
     height: 100vh;
@@ -82,15 +82,16 @@ header nav ul li a:hover {
 } */
 
 .banner {
+    background: url("./images/Object.png") no-repeat center;
     position: relative;
     width: 100%;
-    height: 100vh; /* Full screen */
+    height: 120vh;/* Full screen */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url("./images/Object.png") no-repeat center center/cover;
+    
 }
 
 .banner h1 {
@@ -120,7 +121,7 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Tagline links (SMILES · GRIN · LAUGH) */
+
 .banner-content p {
     font-size: 1.2rem;
     letter-spacing: 3px;
@@ -128,7 +129,7 @@ header nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-/* Call to Action Button */
+
 .banner-content a {
     display: inline-block;
     padding: 15px 40px;
@@ -148,7 +149,7 @@ header nav ul li a:hover {
     box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
-/* === Instructors Section === */
+
 .instructors {
     display: flex;
     justify-content: center;
@@ -168,7 +169,7 @@ header nav ul li a:hover {
     border: 4px solid white;
 }
 
-/* === Quote Section === */
+
 .quote {
     background: #C271FF;
     color: white;
@@ -196,7 +197,7 @@ header nav ul li a:hover {
     font-style: italic;
 }
 
-/* === Tutorials Section === */
+
 .tutorials {
     padding: 80px 60px;
     text-align: center;
@@ -367,8 +368,16 @@ header nav ul li a:hover {
 }
 
 .membership a {
-    margin-top: 30px;
     display: inline-block;
+    padding: 15px 40px;
+    background: #C271FF;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* === FAQ Section === */
@@ -385,12 +394,12 @@ header nav ul li a:hover {
 
 .row_block {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 40px;
 }
 
 .item_block {
-    width: 45%;
+    width: 30%;
     text-align: left;
 }
 
@@ -404,6 +413,7 @@ footer {
 
 footer section {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
